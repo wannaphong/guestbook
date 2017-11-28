@@ -1,0 +1,13 @@
+<?php
+session_start();
+if(isset($_POST['captcha']) && isset($_SESSION['captcha'])){ //
+	if($_POST['captcha'] == $_SESSION['captcha']){
+		if(($user !="admin") && ($pw !="123456")){
+			$_SESSION['admin']="true";
+		}
+	else {
+		echo ("You not admin. :(");
+		}
+	}
+}
+?>

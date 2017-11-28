@@ -1,0 +1,37 @@
+<?php
+include("connect.php"); 
+?>
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+<?php
+$result = $con->query('SELECT * FROM ans');
+while($row = mysqli_fetch_array($result))
+//$row = mysqli_fetch_array($result);
+{
+$id = $row['id'];
+//$title = $row['title'];
+//$name = $row['name'];
+$email = $row['email'];
+$web = $row['web'];
+//$time = $row['time'];
+	echo "<div style='background-color:#FF0;'>";
+	echo"ชื่อ:".$row['name']."<br />";
+	echo"ชื่อเล่น:".$row['name2']."<br />";
+	echo "email: <a href='mailto:$email'> $email</a><br />";
+	//echo"email:".$row['email']."<br />";
+	//echo"เว็บ:".$row['web']."<br />";
+	echo "เว็บไซต์: <a href='$web'> $web</a><br />";
+	echo"ข้อความ:".$row['textarea']."<br />";
+	echo "</div><br />";
+	//echo"IP:".$row['ip']."<br />";
+	//echo"<td><a href='ans.php?id=$id'>เปิด</a></td>";
+}
+?>
+</body>
+</html>

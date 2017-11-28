@@ -1,0 +1,4 @@
+﻿<?php
+$con = new mysqli("127.0.0.1","root","123456789","webbpo");
+echo mysqli_connect_error();
+?>

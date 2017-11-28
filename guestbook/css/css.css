@@ -1,0 +1,17 @@
+/* พัฒนาโดบ วรรณพงษ์ ภัททิยไพบูลย์ */
+@charset "utf-8";
+.top {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	text-decoration: blink;
+}
+#input1 {
+	border-radius:4px;
+}
+table {
+	text-align: left; 
+	width: 90%;
+	height:auto;
+}
+td {
+	vertical-align: top;
+}
